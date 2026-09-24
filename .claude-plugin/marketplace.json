@@ -1,0 +1,18 @@
+{
+  "name": "jira-buddy",
+  "description": "Jira ticket management for Claude Code via Atlassian's remote MCP server",
+  "owner": {
+    "name": "Amjadh23"
+  },
+  "plugins": [
+    {
+      "name": "jira-buddy",
+      "description": "Create, update, search, and manage Jira tickets from Claude using Atlassian's official remote MCP server",
+      "version": "0.1.0",
+      "source": "./",
+      "author": {
+        "name": "Amjadh23"
+      }
+    }
+  ]
+}

@@ -11,17 +11,17 @@ for.
 
 ## Install
 
-1. Clone this repo somewhere on your machine:
+1. Add this repo as a plugin marketplace:
    ```bash
-   git clone https://github.com/Amjadh23/OrynGithub.git jira-buddy
+   claude plugin marketplace add https://github.com/Amjadh23/OrynGithub.git
    ```
-2. In Claude Code, add it as a plugin:
+2. Install the plugin from it:
    ```bash
-   claude plugin add ./jira-buddy
+   claude plugin install jira-buddy@jira-buddy
    ```
-   (or add this repo as a marketplace source if you're distributing it that
-   way — see `claude plugin marketplace add`)
-3. Start (or restart) a Claude Code session in any project.
+3. Start (or restart) a Claude Code session in any project — the plugin is
+   installed at the user level, so it's available everywhere, not just in
+   one project.
 
 ## First use
 
@@ -30,11 +30,8 @@ Jira ticket for X"), Claude Code will prompt you to authenticate — this
 opens a browser window for a normal Atlassian login/OAuth consent. After
 that you're connected and it won't ask again.
 
-You can also connect manually ahead of time:
-```bash
-claude mcp add --transport http atlassian https://mcp.atlassian.com/v2/mcp
-```
-then run `/mcp` in a session to trigger the login.
+You can also trigger the login ahead of time by running `/mcp` in a session
+and picking `atlassian`.
 
 ## What you can ask for
 
