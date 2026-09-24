@@ -1,0 +1,14 @@
+{
+  "name": "jira-buddy",
+  "description": "Create, update, search, and manage Jira tickets from Claude using Atlassian's official remote MCP server",
+  "version": "0.1.0",
+  "author": {
+    "name": "Amjadh23"
+  },
+  "keywords": [
+    "jira",
+    "atlassian",
+    "mcp",
+    "tickets"
+  ]
+}
