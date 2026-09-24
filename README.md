@@ -13,7 +13,7 @@ for.
 
 1. Clone this repo somewhere on your machine:
    ```bash
-   git clone <this-repo-url> jira-buddy
+   git clone https://github.com/Amjadh23/OrynGithub.git jira-buddy
    ```
 2. In Claude Code, add it as a plugin:
    ```bash
