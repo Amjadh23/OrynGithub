@@ -1,0 +1,119 @@
+/**
+ * OrynLab brand tokens.
+ *
+ * Drop-in custom properties for any standalone OrynLab material — decks,
+ * documents, landing pages, social graphics. Not for the oryn-labs-website,
+ * which has its own older token set in app/globals.css.
+ */
+
+:root {
+  /* ---- Palette. Five values, no hue. ---- */
+  --oryn-black: #000000;
+  --oryn-ink: #101a28;
+  --oryn-slate: #5c6672;
+  --oryn-steel: #3a4450;
+  --oryn-mist: #f2f4f7;
+  --oryn-paper: #ffffff;
+
+  /* Semantic aliases */
+  --oryn-bg: var(--oryn-paper);
+  --oryn-surface: var(--oryn-mist);
+  --oryn-text: var(--oryn-ink);
+  --oryn-text-muted: var(--oryn-slate);
+  --oryn-rule: #dfe3e8;
+
+  /* ---- Type ---- */
+  --oryn-font: "Poppins", "Montserrat", "Century Gothic", system-ui, sans-serif;
+
+  --oryn-tracking-display: 0.08em;
+  --oryn-tracking-heading: 0.06em;
+  --oryn-tracking-label: 0.14em;
+  --oryn-tracking-caption: 0.1em;
+
+  --oryn-leading-display: 1.15;
+  --oryn-leading-body: 1.6;
+
+  /* ---- Radii ---- */
+  --oryn-radius-pill: 999px;
+  --oryn-radius-card: 4px;
+}
+
+/* Dark surfaces invert fully — the contrast is the brand, so don't soften it. */
+[data-oryn-theme="dark"] {
+  --oryn-bg: var(--oryn-black);
+  --oryn-surface: #0b0f14;
+  --oryn-text: var(--oryn-paper);
+  --oryn-text-muted: #9aa3ad;
+  --oryn-rule: #242c36;
+}
+
+/* ---- Type roles ---- */
+
+.oryn-display {
+  font-family: var(--oryn-font);
+  font-weight: 800;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  letter-spacing: var(--oryn-tracking-display);
+  line-height: var(--oryn-leading-display);
+  text-transform: uppercase;
+  color: var(--oryn-text);
+}
+
+.oryn-heading {
+  font-family: var(--oryn-font);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: var(--oryn-tracking-heading);
+  text-transform: uppercase;
+  color: var(--oryn-text);
+}
+
+.oryn-label {
+  font-family: var(--oryn-font);
+  font-weight: 700;
+  font-size: 0.9375rem;
+  letter-spacing: var(--oryn-tracking-label);
+  text-transform: uppercase;
+  color: var(--oryn-text);
+}
+
+.oryn-body {
+  font-family: var(--oryn-font);
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: var(--oryn-leading-body);
+  letter-spacing: 0;
+  color: var(--oryn-text);
+}
+
+.oryn-caption {
+  font-family: var(--oryn-font);
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: var(--oryn-tracking-caption);
+  text-transform: uppercase;
+  color: var(--oryn-text-muted);
+}
+
+/* ---- The hatched full-stop that sits under a heading ---- */
+.oryn-rule-hatched {
+  height: 10px;
+  width: 22%;
+  min-width: 80px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--oryn-text) 0 2px,
+    transparent 2px 6px
+  );
+}
+
+/* ---- Icon chip: solid circle, glyph knocked out ---- */
+.oryn-icon-chip {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--oryn-radius-pill);
+  background: var(--oryn-black);
+  color: var(--oryn-paper);
+}

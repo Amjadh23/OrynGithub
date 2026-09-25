@@ -1,0 +1,15 @@
+{
+  "name": "orynlab-skills",
+  "description": "OrynLab's brand system — monochrome palette, geometric type, the three-dot mark, and the curve-and-chevron shape language, for anything carrying the OrynLab name",
+  "version": "0.1.0",
+  "author": {
+    "name": "Amjadh23"
+  },
+  "keywords": [
+    "orynlab",
+    "brand",
+    "design-system",
+    "theme",
+    "typography"
+  ]
+}

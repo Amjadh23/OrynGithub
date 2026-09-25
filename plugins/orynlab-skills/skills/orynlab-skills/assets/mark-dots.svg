@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 90" width="120" height="90" role="img" aria-label="OrynLab mark">
+  <title>OrynLab mark</title>
+  <!-- Three dots ascending left to right, growing as they rise.
+       Lower two in ink, the highest in slate. -->
+  <circle cx="18" cy="70" r="11" fill="#101A28"/>
+  <circle cx="55" cy="44" r="18" fill="#101A28"/>
+  <circle cx="98" cy="18" r="14" fill="#5C6672"/>
+</svg>

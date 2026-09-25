@@ -1,4 +1,39 @@
-# jira-buddy
+# OrynLab plugins
+
+A Claude Code plugin marketplace with two plugins: **jira-buddy** and
+**orynlab-skills**.
+
+Add the marketplace once, then install whichever you want:
+
+```bash
+claude plugin marketplace add https://github.com/Amjadh23/OrynGithub.git
+claude plugin install jira-buddy@jira-buddy
+claude plugin install orynlab-skills@jira-buddy
+```
+
+---
+
+## orynlab-skills
+
+OrynLab's brand system, so anything carrying the name looks like it came from
+the same place — decks, documents, social graphics, posters, business cards,
+diagrams, README headers.
+
+It covers the monochrome palette (no accent colour, by design), the geometric
+type scale and its wide-tracked caps, the three-dot mark and wordmark rules,
+and the curve-and-chevron shape language. Ships drop-in CSS custom properties
+in `references/tokens.css` and the mark as SVG.
+
+Use it by asking for something "in the OrynLab brand", or run
+`/orynlab-skills` directly.
+
+> The logo lockup itself is not in the repo yet — drop the SVG into
+> `plugins/orynlab-skills/skills/orynlab-skills/assets/` and push. See that
+> folder's README for the filenames it expects.
+
+---
+
+## jira-buddy
 
 A Claude Code plugin for managing Jira tickets in plain English — create,
 update, search, transition, comment on, and assign tickets — without leaving
@@ -9,19 +44,14 @@ account and no API key to hand out: each person connects their **own**
 Atlassian account, and only ever sees what they already have Jira permission
 for.
 
-## Install
+### Install
 
-1. Add this repo as a plugin marketplace:
-   ```bash
-   claude plugin marketplace add https://github.com/Amjadh23/OrynGithub.git
-   ```
-2. Install the plugin from it:
-   ```bash
-   claude plugin install jira-buddy@jira-buddy
-   ```
-3. Start (or restart) a Claude Code session in any project — the plugin is
-   installed at the user level, so it's available everywhere, not just in
-   one project.
+```bash
+claude plugin install jira-buddy@jira-buddy
+```
+
+Then start (or restart) a Claude Code session in any project — plugins install
+at the user level, so they're available everywhere, not just in one project.
 
 ## First use
 
