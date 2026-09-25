@@ -1,19 +1,19 @@
 # OrynLab plugins
 
 A Claude Code plugin marketplace with two plugins: **jira-buddy** and
-**orynlab-skills**.
+**orynlab-brand**.
 
 Add the marketplace once, then install whichever you want:
 
 ```bash
 claude plugin marketplace add https://github.com/Amjadh23/OrynGithub.git
 claude plugin install jira-buddy@jira-buddy
-claude plugin install orynlab-skills@jira-buddy
+claude plugin install orynlab-brand@jira-buddy
 ```
 
 ---
 
-## orynlab-skills
+## orynlab-brand
 
 OrynLab's brand system, so anything carrying the name looks like it came from
 the same place — decks, documents, social graphics, posters, business cards,
@@ -25,10 +25,10 @@ and the curve-and-chevron shape language. Ships drop-in CSS custom properties
 in `references/tokens.css` and the mark as SVG.
 
 Use it by asking for something "in the OrynLab brand", or run
-`/orynlab-skills` directly.
+`/orynlab-brand` directly.
 
 > The logo lockup itself is not in the repo yet — drop the SVG into
-> `plugins/orynlab-skills/skills/orynlab-skills/assets/` and push. See that
+> `plugins/orynlab-brand/skills/orynlab-brand/assets/` and push. See that
 > folder's README for the filenames it expects.
 
 ---

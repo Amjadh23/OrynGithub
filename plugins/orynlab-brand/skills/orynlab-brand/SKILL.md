@@ -1,5 +1,5 @@
 ---
-name: orynlab-skills
+name: orynlab-brand
 description: OrynLab's brand system — monochrome palette, geometric type, the three-dot mark, and the curve-and-chevron shape language. Use when producing anything that carries the OrynLab name: slide decks, documents, reports, web pages, social graphics, posters, business cards, diagrams, email signatures, or README headers. Also use when asked to "match the OrynLab brand", "use our branding", or to check whether an existing design is on-brand.
 ---
 
